@@ -104,7 +104,8 @@
 {
     background-image: url('https://www.cmacgm-group.com/api//sites/default/files/2018-11/talent_findyourdreamjob_1920.jpg');
     background-size: cover; 
-    height: 600px;
+    width: 100%;
+    padding-bottom: 26%;
 }
 
 #header .slider .container .intro
@@ -140,3 +141,35 @@
     border: 2px solid #FFF;
     padding: 10px 30px;
 }
+
+/*slider end*/
+
+/*header end*/
+
+
+
+
+
+
+/*content start*/
+
+/*partners start*/
+
+#partners
+{
+    text-align: center;
+}
+
+#partners .container .complist 
+{
+    overflow: hidden;
+}
+
+#partners .container .complist div
+{
+    float: left;
+}
+
+/*partners end*/
+
+/*partners end*/
