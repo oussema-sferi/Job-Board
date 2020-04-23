@@ -17,6 +17,17 @@
     border-radius: 3px;
 }
 
+#header .navbar .container a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#header .navbar .container a:hover
+{
+   color: #F1C300;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -46,16 +57,18 @@
     float: right;
     font-weight: bold;
     font-size: 25px;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-color: green;
     border-radius: 25px;
     padding: 7px;
+    background-color: red;
 }
 
 #header .navbar .container .leftpart .leftlist
 {  
     float: right;
     overflow: hidden;
-    margin-left: 170px;
+    margin-left: 130px;
 }
 
 #header .navbar .container .leftpart ul
@@ -71,6 +84,7 @@
     float: left;
     padding: 10px 20px;
 }
+
 
 /*navbar left part end*/
 
@@ -96,7 +110,12 @@
     background-color: #F1C300;
     border: 1px solid white;
     border-radius: 7px;
-    font-style: italic;
+    
+}
+
+#header .navbar .container .rightpart ul li a:hover
+{
+   color: black;
 }
 
 #header .navbar .container .rightpart ul .login
