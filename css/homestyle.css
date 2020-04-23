@@ -1,0 +1,108 @@
+.container
+{
+    width: 1170px;
+    margin: auto;    
+}
+
+#header .navbar
+{
+    background-color: #252F31;
+    font-weight: bold;
+    color: #FFF;
+    overflow: hidden;
+    font-family: Alegreya; 
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+/*navbar left part start*/
+#header .navbar .container .leftpart
+{
+    overflow: hidden;
+    float: left;
+}
+
+#header .navbar .container .leftpart .logo
+{  
+    float: left;
+    overflow: hidden;
+}
+
+#header .navbar .container .leftpart .logo img
+{  
+    float: left;
+}
+#header .navbar .container .leftpart .logo h2
+{  
+	margin-left: 15px;
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#header .navbar .container .leftpart .leftlist
+{  
+    float: right;
+    overflow: hidden;
+    margin-left: 170px;
+}
+
+#header .navbar .container .leftpart ul
+{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: left;
+}
+
+#header .navbar .container .leftpart .leftlist ul li
+{
+    float: left;
+    padding: 10px 20px;
+}
+
+/*navbar left part end*/
+
+/*navbar right part start*/
+
+#header .navbar .container .rightpart
+{
+    float: right;
+}
+
+#header .navbar .container .rightpart ul
+{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+
+#header .navbar .container .rightpart ul li
+{
+    float: left;
+    padding: 10px 20px;
+    background-color: #F1C300;
+   	border: 1px solid white;
+    border-radius: 7px;
+    font-style: italic;
+}
+
+#header .navbar .container .rightpart ul .login
+{
+	margin-right: 3px;
+    
+}
+
+#header .navbar .container .rightpart ul .register
+{
+	margin-left: 3px;
+}
+/*navbar right part end*/
+
+#header .backgr
+{
+    background-image: url('https://www.cmacgm-group.com/api//sites/default/files/2018-11/talent_findyourdreamjob_1920.jpg');
+    background-size: cover; 
+    height: 600px;
+}
