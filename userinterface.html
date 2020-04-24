@@ -3,9 +3,7 @@
 <head>
 	<title>User Interface</title>
 	 <link rel="stylesheet" href="css/normalize.css">
-     <link rel="stylesheet" href="css/homestyle.css">
      <link rel="stylesheet" href="css/user.css">
-     <link rel= "stylesheet" href = "css/user-information-update.css">
 </head>
 <body>          <div id="header">
         
@@ -44,36 +42,35 @@
         <div id = "info-update-btn" class="btn">Update your profile</div>
       </div>
       <!-- end of header -->
-
-      <div class = "container">
-        <div class="content-left">
+      <div class="user-page-content-container">
+        <div class="user-information">
+          <div class= "user-logo-area">
+            <img class= "user-logo" src = "https://www.childhood.org.au/app/uploads/2017/07/ACF-logo-placeholder.png">
+          </div>
+          <div class = "user-title-area">
+            <h2 class = "user-title">Our company</h2>
+          </div>
         </div>
-
-        <div class="content-right"></div>
+        <div id=user-about-content>
+          <h3 class="user-about-title">Who are we</h3>
+          <p class="user-about">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+        <div class = "services" >
+          <h3 class="user-about-title">Our services</h3>
+          <ul class="services-list">
+            <li></li>
+          </ul>
+        </div>
+        <div id = "contact information">
+          <p class = "user-address">Adress</p>
+          <p class="user-phoneNumber">phone Number</p>   
+        </div>
       </div>
-<div id = "user-content">
-    <div id = "left-profile">
-		<form class="logo-company">
- 	<label id="upload-word" for="img">Upload your logo</label><br>
-  <input id="img-upload" type="file"  name="img" accept="image/*">
-  <h2 id ="company-name" contenteditable="true"><b>Your company name<b></h2>
-  <br><br>
-    <p id ="about"><b>About</b></p>
-<p id ="company-text" contenteditable="true">Let people know you tell us more about your company</p>
-  	<button id = "company-info-submit">Sumbit</button>
-		</form>
-    </div>
-		<div id = "center-profile">
-			your posted Jobs
-		</div>
-    <div id = right-profile>
-	<form>
-	<input id="job-title" type="text" name="test">
-	<input id = "job-describ" type="text" name="jobDescrip">
-	<button id="submit-job">Submit</button>
-</form>
-</div>
-</div> 
+
+        <div id= "user-posted-jobs" class="user-page-content">
+          
+        </div>
+      </div>
 
 <div class="info-form-container">
   <div class="user-info-form-title">Update Your Information</div>
