@@ -256,90 +256,6 @@
 
 /*partners end*/
 
-/*content end*/
-
-/*login signup start*/
-.login-form-container{
-    width: 500px;
-    margin: 70px auto;
-    border-radius: 5px;
-    border: 4px solid lightgrey;
-}
-
-.signup, .signin {
-    width: 50%;
-    height: 60px;
-    background-color: #fff;
-    float: left;  
-    line-height: 60px;
-    text-align: center; 
-    cursor: pointer;
-}
-
-.signup-form, .signin-form {
-    background-color: #fff;
-    box-sizing: border-box;
-    padding: 40px;
-    clear: both; 
-    width: 100%;
-    height: 400px;   
-}
-
-.input {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 25px;
-    border: 2px solid #e9eaea;
-    color: #3e3e40;
-    font-size: 14px;
-    outline: none;
-    transition: all 0.5s ease;
-}
-
-input:focus {
-    border: 2px solid #D35400;
-}
-
-.btn {
-    width: 100%;
-    background-color: #E7E2B4; 
-    height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 60px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.forgot{
-    text-decoration: none;
-    color: black;
-}
-
-/*login signup end*/
-
-/*jobs area star*/
-#jobs{
-    text-align: left;
-    padding: 7px 15px;
-    margin: 20px 2px;
-}
-
-
-.job-titles{
-font-weight: bold;
-margin-left: 10px;
-margin-top: 80px;
-}
-
-.job-descriptions{
-    margin-left: 20px;
-    margin-top: 8px;
-}
-
 
 
 /*alljobs start*/
@@ -428,5 +344,173 @@ margin-top: 80px;
 }
 
 /*testimonials end*/
+
+
+/*contact start*/
+
+#contact
+{
+    background-color: #252F31;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    overflow: hidden;
+    font-family: Alegreya;
+}
+
+#contact .container .info
+{
+    width: 50%;
+    margin-right: 5%;
+    float: left;
+}
+
+#contact .container .info h2
+{
+    color: #FFF;
+    margin-left: 40px;
+}
+
+#contact .container .info p
+{
+    color: #5B6063;
+    margin-left: 40px;
+}
+
+#contact .container .info p strong {color: #D1D6DA;}
+
+#contact .container .form 
+{
+    float: left;
+    width: 45%;
+}
+
+#contact .container .form label
+{
+    display: block;
+    color: #D1D6DA;
+    margin: 10px 0;
+}
+
+
+
+#contact .container .form input[type="text"]
+{
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#contact .container .form textarea
+{
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+#contact .container .form input[type="submit"]
+{
+    background-color: #191E22;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    margin-top:10px;
+    border-radius: 7px;
+}
+
+
+/*contact end*/
+
+
+/*login signup start*/
+
+.login-form-container{
+    width: 500px;
+    margin: 70px auto;
+    border-radius: 5px;
+    border: 4px solid lightgrey;
+}
+
+.signup, .signin {
+    width: 50%;
+    height: 60px;
+    background-color: #fff;
+    float: left;  
+    line-height: 60px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.signup-form, .signin-form {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 40px;
+    clear: both; 
+    width: 100%;
+    height: 400px;   
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    color: #3e3e40;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+input:focus {
+    border: 2px solid #D35400;
+}
+
+.btn {
+    width: 100%;
+    background-color: #E7E2B4; 
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.forgot{
+    text-decoration: none;
+    color: black;
+}
+
+/*login signup end*/
+
+/*jobs area star*/
+#jobs{
+    text-align: left;
+    padding: 7px 15px;
+    margin: 20px 2px;
+}
+
+
+.job-titles{
+font-weight: bold;
+margin-left: 10px;
+margin-top: 80px;
+}
+
+.job-descriptions{
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/*login signup end*/
 
 /*content end*/
