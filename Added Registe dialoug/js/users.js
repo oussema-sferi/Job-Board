@@ -28,7 +28,7 @@ $("#signup-btn").click(function() {
 
 	if(!check)
 		return alert("This user name is already taken, please choose another.")
-	else if($("#user-name-signup").val() === "" || $("#email-signup").val() || $("#password-signup").val())
+	else if($("#user-name-signup").val() === "" || $("#email-signup").val() === "" || $("#password-signup").val() === "")
 		return alert("Plese Enter your information.")
 	else {	
 	const user = {
