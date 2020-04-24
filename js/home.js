@@ -12,3 +12,15 @@ function navbarFix() {
   }
 }
 //////////////////////////Done//////////////////////////////////
+
+
+
+/////////////////////////////Test append on jobsarea onclick start////////////////////
+
+$(".register").click(function() {
+
+	$(".jobsarea").append("<div>Job Title</div><p>Job description Job description Job description Job description</p>")
+
+})
+
+/////////////////////////////Test append on jobsarea onclick end////////////////////
