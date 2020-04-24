@@ -4,7 +4,7 @@ function renderJobs(jobs, filter) {
 	var filterJob = $.grep(jobs, function(obj){
 		return obj.jobTitle.toLowerCase().includes(filter.searchText.toLowerCase())
 	})
-	$('#jobs').empty();
+	$('#jobsarea').empty();
 	$.each(filterJob, function(index, value) {
 		var title = $("<p><B>" + value.jobTitle + "</B></p>")
 		title.attr('class', 'job-titles')
@@ -14,7 +14,7 @@ function renderJobs(jobs, filter) {
 		container.attr("id", value.id)
 		container.append(title)
 		container.append(parg)
-		$('#jobs').append(container)
+		$('#jobsarea').append(container)
 	})
 }
 
