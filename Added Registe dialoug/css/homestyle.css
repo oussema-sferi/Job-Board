@@ -81,13 +81,10 @@
 {  
     float: right;
     overflow: hidden;
-<<<<<<< HEAD:Added Registe dialoug/css/homestyle.css
     margin-left: 130px;
     padding-top: 10px;
-=======
     margin-left: 100px;
     margin-top: 1px;
->>>>>>> 1a7483ef6bf07edcd4515bf4a944a3f59bf6ea64:css/homestyle.css
 }
 
 #header .navbar .container .leftpart ul

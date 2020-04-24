@@ -9,7 +9,7 @@ function nextimelogin(){
 	$("#upload-word").remove();
 	$(".logo-company").css("all", "unset")
 	var picture = $("<img>")
-	picture.attr("id", profile[0].cssid)
+	picture.attr("id", "user-logo")
 	picture.attr("src", profile[0].src)
 	$("#left-profile").append(picture);
 }
@@ -29,7 +29,6 @@ nextimelogin();
     profile.push({
     	id: uuidv4(),
     	src: e.target.result,
-    	cssid: "user-logo",
     	text : "Let people know you tell us more about your company"
     })
    localStorage.setItem("profile", JSON.stringify(profile))

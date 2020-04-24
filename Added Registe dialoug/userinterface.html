@@ -5,6 +5,7 @@
 	 <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/homestyle.css">
      <link rel="stylesheet" href="css/user.css">
+     <link rel= "stylesheet" href = "css/user-information-update.css">
 </head>
 <body>          <div id="header">
         
@@ -40,6 +41,7 @@
         </div>       
          <div class="content">
         <h2>Welcome!</h2>
+        <div id = "info-update-btn" class="btn">Update your profile</div>
       </div>
       <!-- end of header -->
 
@@ -72,8 +74,39 @@
 </form>
 </div>
 </div> 
+
+<div class="info-form-container">
+  <div class="user-info-form-title">Update Your Information</div>
+  <div class="user-info-form">
+    <div class="user-name-area">
+      <label class="user-input-label" for="user-name">Company</label>
+      <input id = "user-name-input" name=user-name type="text" placeholder="Your company name"><br>
+    </div>
+    
+    <div class="user-logo-area">    
+      <label class="user-input-label" for="file">Logo</label>
+    <input id ="user-logo-input" type = "file" name = "file">
+  </div>
+  <div class="user-about-area">
+     <label id = "about-label" class="user-input-label" for="about">About</label>
+    <textarea id ="user-about-input" rows="7" cols="50">Tell us more about your company, let people know what you do!</textarea> 
+  </div>
+  <div class="user-contact-info">
+    <div class="user-address-area">    
+      <label class="user-input-label" for="address">Your Adress</label>
+    <input id ="user-address-input" type = "text" name = "address">
+  </div>
+      <div class="user-phone-area">    
+      <label class="user-input-label" for="phone">Phone Number</label>
+    <input id ="user-phone-input" type = "tel" name = "phone">
+  </div>
+  </div>
+    <div id="info-btn" class="btn">Submit</div>
+  <div>
 <script type="text/javascript" src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
 <script type="text/javascript" src="js/jobs.js"></script>
+<script type="text/javascript" src = "js/popup-profile-update.js"></script>
 </body>
 </html>

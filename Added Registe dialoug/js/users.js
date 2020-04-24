@@ -2,10 +2,12 @@ var users = JSON.parse(localStorage.getItem("users"))
 $("#signin-btn").click(function() {
 	if(users === null)
 		return alert("Sign-UP First!");
+	else if($("#user-name-signin").val() === "" || $("#password-signin").val() === "")
+		return alert("Plese Enter your information.")
 	else $.each(users, function(index, value) {
 		if(value.username === $("#user-name-signin").val() || value.email === $("#user-name-signin").val()){
 			if(value.password === $("#password-signin").val()){
-				localStorage.setItem("ThisUser", JSON.stringify([{id: value.id}]))
+				localStorage.setItem("ThisUser", JSON.stringify([value]))
 				window.location.href = "userinterface.html"
 			}
 		else return alert("Wrong Password")
@@ -25,7 +27,9 @@ $("#signup-btn").click(function() {
 	})
 
 	if(!check)
-	return alert("This user name is already taken, please choose another.")
+		return alert("This user name is already taken, please choose another.")
+	else if($("#user-name-signup").val() === "" || $("#email-signup").val() || $("#password-signup").val())
+		return alert("Plese Enter your information.")
 	else {	
 	const user = {
 					id: uuidv4(),
@@ -33,12 +37,15 @@ $("#signup-btn").click(function() {
 					password: $("#password-signup").val(),
 					email: $("#email-signup").val(),
 					img: "",
-					companydescription: "Let people know you tell us more about your company",
-					jobsPosted:[]
+					companyName : "",
+					companydescription: "",
+					jobsPosted:[],
+					phoneNumber: "",
+					address: ""
 				}
 				users.push(user);
 				localStorage.setItem("users", JSON.stringify(users));
-				localStorage.setItem("ThisUser", JSON.stringify([{id: user.id}]));
+				localStorage.setItem("ThisUser", JSON.stringify([user]));
 				window.location.href = "userinterface.html";}
 			}
 })
