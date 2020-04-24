@@ -2,17 +2,108 @@
 <html>
 <head>
 	<title>User Interface</title>
+	 <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/user.css">
 </head>
-<body>
+<body>          <div id="header">
+        
+        <div class="navbar">
 
-	<input id="job-title" type="text" name="test">
-	<br>
-	<input id = "job-describ" type="text" name="jobDescrip">
-	
-	<button id="submit-job">Submit</button>
+          <div class="container">
 
+            <div class="leftpart">
+
+              <div class="logo">
+                <img src="images/logo2.png">
+                <h2>Tunibyan Jobs</h2>               
+              </div>
+
+              <div class="leftlist">
+              <ul>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#">All Jobs</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              </div>
+
+            </div>
+
+            <div class="rightpart">
+              <ul>
+                <li class="logout"><a href = "file:///C:/Users/rfell/Job-Board/home.html">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>       
+         <div class="content">
+        <h2>Welcome!</h2>
+        <div id = "info-update-btn" class="btn">Update your profile</div>
+      </div>
+      <!-- end of header -->
+      <div class="user-page-content-container">
+        <div class="user-information">
+          <div class= "user-logo-area">
+            <img class= "user-logo" src = "https://www.childhood.org.au/app/uploads/2017/07/ACF-logo-placeholder.png">
+          </div>
+          <div class = "user-title-area">
+            <h2 class = "user-title">Our company</h2>
+          </div>
+        </div>
+        <div id=user-about-content>
+          <h3 class="user-about-title">Who are we</h3>
+          <p class="user-about">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+        <div class = "services" >
+          <h3 class="user-about-title">Our services</h3>
+          <ul class="services-list">
+            <li></li>
+          </ul>
+        </div>
+        <div id = "contact information">
+          <p class = "user-address">Adress</p>
+          <p class="user-phoneNumber">phone Number</p>   
+        </div>
+      </div>
+
+        <div id= "user-posted-jobs" class="user-page-content">
+          
+        </div>
+      </div>
+
+<div class="info-form-container">
+  <div class="user-info-form-title">Update Your Information</div>
+  <div class="user-info-form">
+    <div class="user-name-area">
+      <label class="user-input-label" for="user-name">Company</label>
+      <input id = "user-name-input" name=user-name type="text" placeholder="Your company name"><br>
+    </div>
+    
+    <div class="user-logo-area">    
+      <label class="user-input-label" for="file">Logo</label>
+    <input id ="user-logo-input" type = "file" name = "file">
+  </div>
+  <div class="user-about-area">
+     <label id = "about-label" class="user-input-label" for="about">About</label>
+    <textarea id ="user-about-input" rows="7" cols="50">Tell us more about your company, let people know what you do!</textarea> 
+  </div>
+  <div class="user-contact-info">
+    <div class="user-address-area">    
+      <label class="user-input-label" for="address">Your Adress</label>
+    <input id ="user-address-input" type = "text" name = "address">
+  </div>
+      <div class="user-phone-area">    
+      <label class="user-input-label" for="phone">Phone Number</label>
+    <input id ="user-phone-input" type = "tel" name = "phone">
+  </div>
+  </div>
+    <div id="info-btn" class="btn">Submit</div>
+  <div>
 <script type="text/javascript" src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
-<script type="text/javascript" src="jobs.js"></script>
+<script type="text/javascript" src="js/jobs.js"></script>
+<script type="text/javascript" src = "js/popup-profile-update.js"></script>
 </body>
 </html>

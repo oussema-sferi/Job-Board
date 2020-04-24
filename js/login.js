@@ -1,5 +1,4 @@
-signinSignup();
-function signinSignup(){
+
 $(function(){
 	$(".login-form-container").dialog({
 		autoOpen: false, modal : true, show: "blind", hide: "blind",
@@ -30,4 +29,3 @@ $(function(){
 	})
 		return false;
 })
-}

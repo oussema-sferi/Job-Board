@@ -1,19 +1,26 @@
 var users = JSON.parse(localStorage.getItem("users"))
 $("#signin-btn").click(function() {
+	var check = false;
 	if(users === null)
 		return alert("Sign-UP First!");
 	else if($("#user-name-signin").val() === "" || $("#password-signin").val() === "")
 		return alert("Plese Enter your information.")
-	else $.each(users, function(index, value) {
-		if(value.username === $("#user-name-signin").val() || value.email === $("#user-name-signin").val()){
-			if(value.password === $("#password-signin").val()){
-				localStorage.setItem("ThisUser", JSON.stringify([value]))
-				window.location.href = "userinterface.html"
+	else {
+		for(var i = 0; i < users.length; i++) {
+			if(users[i].username === $("#user-name-signin").val() || users[i].email === $("#user-name-signin").val()){
+				if(users[i].password === $("#password-signin").val()){
+					localStorage.setItem("ThisUser", JSON.stringify([users[i]]))
+					check = true;
+				}
 			}
-		else return alert("Wrong Password")
 		}
-	else return alert("No such a user name, please check.")
-	})
+	}
+	if(!check)
+		return alert("wrong user name or password")
+	
+	else 
+	window.location.href = "userinterface.html"	
+
 })
 
 $("#signup-btn").click(function() {
@@ -28,7 +35,7 @@ $("#signup-btn").click(function() {
 
 	if(!check)
 		return alert("This user name is already taken, please choose another.")
-	else if($("#user-name-signup").val() === "" || $("#email-signup").val() || $("#password-signup").val())
+	else if($("#user-name-signup").val() === "" || $("#email-signup").val() === "" || $("#password-signup").val() === "")
 		return alert("Plese Enter your information.")
 	else {	
 	const user = {
