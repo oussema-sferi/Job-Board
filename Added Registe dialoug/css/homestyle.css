@@ -1,7 +1,8 @@
 .container
 {
-    width: 1170px;
+    max-width: 1870px;
     margin: auto;    
+    align-items: center;
 }
 
 /*header start*/
@@ -50,6 +51,7 @@
 #header .navbar .container .leftpart .logo img
 {  
     float: left;
+    margin-top: 10px;
 }
 #header .navbar .container .leftpart .logo h2
 {  
@@ -69,6 +71,7 @@
     float: right;
     overflow: hidden;
     margin-left: 130px;
+    padding-top: 10px;
 }
 
 #header .navbar .container .leftpart ul
@@ -93,6 +96,7 @@
 #header .navbar .container .rightpart
 {
     float: right;
+    padding-top:10px;
 }
 
 #header .navbar .container .rightpart ul
@@ -110,6 +114,7 @@
     background-color: #F1C300;
     border: 1px solid white;
     border-radius: 7px;
+    padding: 10px 20px;
     
 }
 
@@ -120,8 +125,7 @@
 
 #header .navbar .container .rightpart ul .login
 {
-    margin-right: 3px;
-    
+    margin-right: 25px;
 }
 
 #header .navbar .container .rightpart ul .register
@@ -229,3 +233,92 @@
 /*partners end*/
 
 /*content end*/
+
+/*login signup start*/
+.login-form-container{
+    width: 500px;
+    margin: 70px auto;
+    border-radius: 5px;
+    border: 4px solid lightgrey;
+}
+
+.signup, .signin {
+    width: 50%;
+    height: 60px;
+    background-color: #fff;
+    float: left;  
+    line-height: 60px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.signup-form, .signin-form {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 40px;
+    clear: both; 
+    width: 100%;
+    height: 400px;   
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    color: #3e3e40;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+input:focus {
+    border: 2px solid #D35400;
+}
+
+.btn {
+    width: 100%;
+    background-color: #E7E2B4; 
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.forgot{
+    text-decoration: none;
+    color: black;
+}
+
+/*login signup end*/
+
+/*jobs area star*/
+#jobs{
+    text-align: left;
+    padding: 7px 15px;
+    margin: 20px 2px;
+}
+
+
+.job-titles{
+font-weight: bold;
+margin-left: 10px;
+margin-top: 80px;
+}
+
+.job-descriptions{
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+
+#jobs div{
+    border-bottom-style: solid;
+
+    border-width: 0.5px;
+}
