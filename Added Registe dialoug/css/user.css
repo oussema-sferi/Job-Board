@@ -1,0 +1,10 @@
+body {
+	background-color: #EAEDED ;
+}
+
+.content h2 {
+	background-color: #E7E2B4;
+	padding: 20px 50px;
+	border-radius: 10px;
+	margin: 10px 0px 25px 0px;
+}
