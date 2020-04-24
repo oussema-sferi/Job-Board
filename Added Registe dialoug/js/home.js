@@ -6,9 +6,17 @@ var sticky = navbar.offsetTop;
 
 function navbarFix() {
   if (window.pageYOffset >= sticky) {
-    $(".navbar").addClass("sticky")
+    $(".navbar").addClass("fixnav")
   } else {
-    $(".navbar").removeClass("sticky");
+    $(".navbar").removeClass("fixnav");
   }
 }
 //////////////////////////Done//////////////////////////////////
+
+
+
+/////////////////////////////Test append on jobsarea onclick start////////////////////
+
+
+
+/////////////////////////////Test append on jobsarea onclick end////////////////////

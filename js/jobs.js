@@ -59,24 +59,17 @@ function renderJobs(jobs, filter) {
 	var filterJob = $.grep(jobs, function(obj){
 		return obj.jobTitle.toLowerCase().includes(filter.searchText.toLowerCase())
 	})
-	$('#jobsarea').empty();
+	$('#jobs').empty();
 	$.each(filterJob, function(index, value) {
 		var title = $("<p><B>" + value.jobTitle + "</B></p>")
 		title.attr('class', 'job-titles')
 		var parg = $("<p>" + value.jobDescrib + "</p>")
 		parg.attr('class', 'job-descriptions')
-		var workinghours = $("<p>Working hours per week" + value.workinghours + "</p>");
-		workinghours.attr("class", "work-hours");
-		var date = $("<p>" + value.date + "</p>");
-		date.attr("class", "date-posted");
 		var container = $("<div></div>")
-		container.attr("class, job-container")
 		container.attr("id", value.id)
 		container.append(title)
 		container.append(parg)
-		container.append(workinghours)
-		container.append(date);
-		$('#jobsarea').append(container)
+		$('#jobs').append(container)
 	})
 }
 
@@ -94,13 +87,10 @@ $("#search-job").on('input', function(event){
 $('#submit-job').on("click", function(){
 	if(jobs === null)
 		jobs = [];
-	var date = new Date;
 	jobs.push({
 		id: uuidv4(),
 		jobTitle: $('#job-title').val(),
-		jobDescrib: $('#job-describ').val(),
-		workinghours: $("#work-hour").val(),
-		date: date.getDate() + " / " + (date.getMonth() + 1 )+ " / " +date.getFullYear()
+		jobDescrib: $('#job-describ').val()
 	})
 	localStorage.setItem("jobs", JSON.stringify(jobs))
 })
